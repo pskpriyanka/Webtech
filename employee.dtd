@@ -1,0 +1,9 @@
+<!DOCTYPE employee
+[
+<!ELEMENT employee (eid,name,division,qualification,salary)>
+<!ELEMENT eid (#PCDATA)>
+<!ELEMENT name (#PCDATA)>
+<!ELEMENT division (#PCDATA)>
+<!ELEMENT qualification (#PCDATA)>
+<!ELEMENT salary (#PCDATA)>
+]>

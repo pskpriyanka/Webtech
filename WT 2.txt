@@ -1,0 +1,113 @@
+CSS
+*{
+    display: block; font-size: 30px;
+}
+eid {
+    font-family: "Lucida Console","Courier New", monospace;
+    font-style: bold;
+    color: red;
+    font-size: 65px;
+    margin-top: 30px;
+}
+name {
+    color: blue;
+    font-size: 45px;
+    margin-top: 30px;
+}
+division {
+    color: red;
+    font-size: 45px;
+    margin-top: 30px;
+}
+qualification {
+    color: blue;
+    font-size: 45px;
+    margin-top: 30px;
+}
+salary {
+    font-style: italic;
+    color: red;
+    font-size: 45px;
+    margin-top: 30px;
+}
+
+
+
+=========================\
+
+
+
+DTD
+
+<!DOCTYPE employee
+[
+<!ELEMENT employee (eid,name,division,qualification,salary)>
+<!ELEMENT eid (#PCDATA)>
+<!ELEMENT name (#PCDATA)>
+<!ELEMENT division (#PCDATA)>
+<!ELEMENT qualification (#PCDATA)>
+<!ELEMENT salary (#PCDATA)>
+]>
+==================================
+
+
+XML 
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/css" href="file:///C:/Users/priya/Downloads/Priyanka/COLLEGE/WT/employee.xsl" ?>
+
+<employeedata>
+
+<employee>
+<eid>001</eid>
+<name>Lee</name>
+<division>Marketing</division>
+<qualification>MBA</qualification>
+<salary>79000</salary>
+</employee>
+
+<employee>
+<eid>022</eid>
+<name>Minki</name>
+<division>Testing</division>
+<qualification>BTech</qualification>
+<salary>60000</salary>
+</employee>
+
+<employee>
+<eid>075</eid>
+<name>Quin</name>
+<division>Developer</division>
+<qualification>MCA</qualification>
+<salary>80000</salary>
+</employee>
+
+</employeedata>
+======================================
+XSL 
+<?xml version="1.0"?>
+<xsl:stylesheetversion="1.0" xmlns:xsl="http://www.w3.org/1999/XSL/Transform">
+<xsl:template match="/employeedata">
+
+<html>
+<table cellspacing="3" cellpadding="2" border="4" bgcolor="#00ffff" >
+<tr bgcolor="#ffff00">
+<th>EId</th>
+<th>Name</th>
+<th>Buisness Group</th>
+<th>Qualification</th>
+<th>Salary</th>
+</tr>
+<xsl:for-each select="employee">
+<tr bgcolor="#ff00ff">
+<td><xsl:value-of select="eid" /></td>
+<td><xsl:value-of select="name" /></td>
+<td><xsl:value-of select="division" /></td>
+<td><xsl:value-of select="qualification" /></td>
+<td><xsl:value-of select="salary" /></td>
+
+</tr>
+</xsl:for-each>
+</table>
+</html>
+</xsl:template>
+</xsl:stylesheet>

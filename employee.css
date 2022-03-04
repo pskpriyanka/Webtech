@@ -1,0 +1,31 @@
+*{
+    display: block; font-size: 30px;
+}
+eid {
+    font-family: "Lucida Console","Courier New", monospace;
+    font-style: bold;
+    color: red;
+    font-size: 65px;
+    margin-top: 30px;
+}
+name {
+    color: blue;
+    font-size: 45px;
+    margin-top: 30px;
+}
+division {
+    color: red;
+    font-size: 45px;
+    margin-top: 30px;
+}
+qualification {
+    color: blue;
+    font-size: 45px;
+    margin-top: 30px;
+}
+salary {
+    font-style: italic;
+    color: red;
+    font-size: 45px;
+    margin-top: 30px;
+}

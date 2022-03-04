@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/css" href="file:///C:/Users/priya/Downloads/Priyanka/COLLEGE/WT/employee.xsl" ?>
+
+<employeedata>
+
+<employee>
+<eid>001</eid>
+<name>Lee</name>
+<division>Marketing</division>
+<qualification>MBA</qualification>
+<salary>79000</salary>
+</employee>
+
+<employee>
+<eid>022</eid>
+<name>Minki</name>
+<division>Testing</division>
+<qualification>BTech</qualification>
+<salary>60000</salary>
+</employee>
+
+<employee>
+<eid>075</eid>
+<name>Quin</name>
+<division>Developer</division>
+<qualification>MCA</qualification>
+<salary>80000</salary>
+</employee>
+
+</employeedata>
