@@ -1,0 +1,29 @@
+.bgcolor{
+    background-color: rgb(213, 224, 64);
+}
+.logo
+    {
+        
+        padding: 60px 80px;
+    
+    }
+
+  
+.large-t{
+    font-size: 16px;
+    margin: 20px 0;
+    color: rgb(241, 14, 120);
+    font-weight: 300;
+
+}
+a.btn{
+    margin: 40px 60px;
+    width: 200px;
+    padding: 100px;
+    border-radius: 90px;
+
+
+}
+
+
+
